@@ -1,11 +1,11 @@
 {
-   "name": "SilentTyping",
+   "name": "HelloWorld",
    "version": "1.0.0",
-   "description": "Silences your typing indicator.",
+   "description": "Just a simple hello world button",
    "authors": [
       {
-         "name": "eternal",
-         "id": "263689920210534400"
+         "name": "huaraina",
+         "id": "716417518197014538"
       }
    ]
 }
