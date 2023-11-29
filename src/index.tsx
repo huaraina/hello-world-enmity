@@ -10,7 +10,9 @@ const Patcher = create('hello-world');
 const HelloWorld: Plugin = {
    ...manifest,
 
-   onStart() {},
+   onStart() {
+      console.log("its loaded, ig"); // this is literally just for filling the whitespace
+   },
 
    onStop() {
       Patcher.unpatchAll();
