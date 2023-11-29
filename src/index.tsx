@@ -14,9 +14,8 @@ const HelloWorld: Plugin = {
       function tryNotifySuccess() {
          try {
             Dialog.show({title: "its loaded, you did it!", body: "finally debugged", confirmText: "now go try it out :3"})
-         } catch(e) {
-            const oops = new Error(e);
-            console.error(oops.stack);
+         } catch(dumbError) {
+            console.error(dumbError);
          }
       }
    },
