@@ -8,6 +8,7 @@ interface SettingsProps {
 
 export default ({ settings }: SettingsProps) => {
    const styles = StyleSheet.createThemedStyleSheet({
+      /*this whole thing is copied from someone elses plugin (i forgot who) purely for convenience*/
       container: {
          flexDirection: "row",
          justifyContent: "center",
