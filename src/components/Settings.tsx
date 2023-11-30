@@ -1,4 +1,4 @@
-import { FormRow, FormSwitch, FormSection, ScrollView, View, Image, Text } from 'enmity/components';
+import { FormRow, FormSection, ScrollView, View, Image, Text } from 'enmity/components';
 import { SettingsStore } from 'enmity/api/settings';
 import { React, Constants, Dialog, Navigation, StyleSheet } from 'enmity/metro/common';
 

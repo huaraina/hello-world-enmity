@@ -1,5 +1,5 @@
 import { Plugin, registerPlugin } from 'enmity/managers/plugins';
-import { React } from 'enmity/metro/common';
+import { React, Dialog } from 'enmity/metro/common';
 import { create } from 'enmity/patcher';
 import manifest from '../manifest.json';
 
@@ -10,7 +10,15 @@ const Patcher = create('hello-world');
 const HelloWorld: Plugin = {
    ...manifest,
 
-   onStart() {},
+   onStart() {
+      function tryNotifySuccess() {
+         try {
+            Dialog.show({title: "its loaded, you did it!", body: "finally debugged", confirmText: "now go try it out :3"})
+         } catch(dumbError) {
+            console.error(dumbError);
+         }
+      }
+   },
 
    onStop() {
       Patcher.unpatchAll();
